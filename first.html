@@ -2,67 +2,79 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>FirstPage</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            text-align: center;
-
-        }
-    </style>
+    <link rel="stylesheet" href="cssforfirst.css">
 </head>
 
 <body>
     <h1>Вакансия:Junior Frontend Developer</h1>
-    <img src="фото.jpg" alt="Мое фото" style="width:128px;height:128px;">
-    <div style="display:inline-block; vertical-align: top;">
-        <span>Имя:Дмитрий</span><br>
-        <a href="https://github.com/FinoDS/HomeWork1.git" target="_blank">Ссылка на репозиторий</a><br>
-        <span>Опыт работы: нет</span>
+    <div>
+        <div style="display:inline-block; vertical-align: top;">
+            <img src="фото.jpg" alt="Мое фото" style="width:128px;height:128px;">
+        </div>
+        <div style="display:inline-block; vertical-align: top;">
+            <span>Имя:</span>Дмитрий<br>
+            <a href="https://github.com/FinoDS/HomeWork1.git" target="_blank">Ссылка на репозиторий</a><br>
+            <span>Опыт работы:</span> нет
+        </div>
     </div>
     <form>
-        Дата Собеседования:<input type="date" name="Дата Собеседования">
+        <span>Дата Собеседования:</span><input type="date" name="Дата Собеседования">
         <i class="fas fa-calendar-alt"></i>
+      <p class="fin">
+          <!--value??-->
+          <span>Уровень английского языка:</span><br>
+          <input type="radio" id="1" name="Уровень">
+          <label for="1">Плохо</label>
+          <input type="radio" id="2" name="Уровень" checked>
+          <label for="2">Средне</label>
+          <input type="radio" id="3" name="Уровень">
+          <label for="3">Хорошо</label>
+          <input type="radio" id="4" name="Уровень">
+          <label for="4">Превосходно</label>
+      </p>
+        <!--name".." вставлять в <p>??-->
         <p>
-            Уровень английского языка:<br>
-            <input type="radio" name="Уровень">Плохо
-            <input type="radio" name="Уровень" checked>Средне
-            <input type="radio" name="Уровень">Хорошо
-            <input type="radio" name="Уровень">Превосходно
+            <span>Ключевые Навыки:</span>
+            <ul>
+                <li>HTML</li>
+                <li>CSS/LESS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+            <input placeholder="введите навык...">
+            <input type="submit" value="добавить в список">
         </p>
-        <p>Ключевые Навыки:</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS/LESS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-        </ul>
-        <input placeholder="введите навык...">
-        <input type="submit" value="добавить в список">
-        <p>Коммуникабельность:
+        <!--value???-->
+        <p>
+            <span>Коммуникабельность:</span>
             <select name="Коммуникабельность">
-                <option name="" selected disabled hidden>Выберите значение</option>
-                <option name="Коммуникабельность">Вообще нет</option>
-                <option name="Коммуникабельность">Говорит без остановки)</option>
-                <option name="Коммуникабельность">Умеет и слушать</option>
+                <option selected disabled hidden>Выберите значение</option>
+                <option>Вообще нет</option>
+                <option>Говорит без остановки)</option>
+                <option>Умеет и слушать</option>
             </select>
         </p>
         <p>
-            Желаемая з/п:
+            <span>Желаемая з/п:</span>
             <input type="number" placeholder="введите значение...">
         </p>
-        <p>Подходит по критериям:</p>
-        <input type="checkbox" name="критерии">Знание английского
-        <input type="checkbox" name="критерии">Оклад
-        <input type="checkbox" name="критерии">Навыки
-        <input type="checkbox" name="критерии">Сразу видно,что свой человек
+        <p class="fin">
+            <span>Подходит по критериям:</span><br>
+            <input type="checkbox" id="5" name="критерии">
+            <label for="5">Знание английского</label>
+            <input type="checkbox" id="6" name="критерии">
+            <label for="6">Оклад</label>
+            <input type="checkbox" id="7" name="критерии">
+            <label for="7">Навыки</label>
+            <input type="checkbox" id="8" name="критерии">
+            <label for="8">Сразу видно,что свой человек</label>
+        </p>
         <p>
-            Образование, курсы и т.п.
+            <span>Образование, курсы и т.п.</span>
         </p>
         <table style="width:100%">
             <thead>
